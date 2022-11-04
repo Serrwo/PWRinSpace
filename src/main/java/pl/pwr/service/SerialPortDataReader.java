@@ -63,6 +63,7 @@ public class SerialPortDataReader implements SerialPortDataListener {
         dataRecordRepository.saveAndFlush(dataRecord);
 
         Float[] parsedData = dataRecord.getData();
+        log.info("Recruit: {}", dataRecord.getRecruit());
         for(int i = 0; i < parsedData.length; i++) {
             log.info("Value {}: {}", i, parsedData[i]);
         }

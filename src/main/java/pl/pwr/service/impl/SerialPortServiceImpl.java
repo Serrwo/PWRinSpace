@@ -1,21 +1,22 @@
 package pl.pwr.service.impl;
 
 import com.fazecast.jSerialComm.SerialPort;
-import com.fazecast.jSerialComm.SerialPortInvalidPortException;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
+import pl.pwr.api.dto.DataRecordDto;
 import pl.pwr.converter.DataParser;
 import pl.pwr.model.repository.DataRecordRepository;
 import pl.pwr.service.SerialPortDataReader;
 import pl.pwr.service.SerialPortService;
 
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.NoSuchElementException;
+import java.io.IOException;
+import java.io.OutputStream;
+import java.util.*;
 
 @Service
 @RequiredArgsConstructor
+@Slf4j
 public class SerialPortServiceImpl implements SerialPortService {
 
     private final DataParser dataParser;
@@ -47,6 +48,34 @@ public class SerialPortServiceImpl implements SerialPortService {
         }
         reader.closePort();
         listeners.remove(portName);
+    }
+
+    public void send(DataRecordDto dataRecordDto, String portName) {
+        try {
+            SerialPort serialPort = getPort(portName);
+            serialPort.openPort();
+            Float[] data = dataRecordDto.getData();
+            StringBuilder stringBuilder = new StringBuilder();
+            stringBuilder.append(dataRecordDto.getRecruit()).append(";");
+            for(int i = 0; i < data.length; i++) {
+                Float value = data[i];
+                stringBuilder.append(value.toString());
+                if(i + 1 < data.length) {
+                    stringBuilder.append(";");
+                }
+            }
+            byte[] byteArray = stringBuilder.toString().getBytes();
+            try(OutputStream outputStream = serialPort.getOutputStream()) {
+                outputStream.write(byteArray);
+            } catch (IOException ex) {
+                log.error("Could create output stream from serial port '{}'", portName);
+                throw new IOException(ex);
+            } finally {
+                serialPort.closePort();
+            }
+        } catch (NoSuchElementException | IOException e) {
+            throw new IllegalArgumentException(String.format("Couldn't send data to port '%s'.", portName));
+        }
     }
 
     @Override

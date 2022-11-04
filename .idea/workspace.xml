@@ -4,35 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="218b2db1-c35e-4291-a163-69f5030727f2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db.mv.db" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db.trace.db" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/pwr/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/pwr/api/controller/DataController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/pwr/api/controller/SerialPortController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/pwr/api/dto/DataRecordDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/pwr/api/filter/DataRecordFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/pwr/api/mapper/DataRecordMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/pwr/converter/DataParser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/pwr/converter/FloatDataConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/pwr/exception/ParseException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/pwr/model/entity/DataRecord.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/pwr/model/repository/DataRecordRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/pwr/service/DataService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/pwr/service/Mapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/pwr/service/SerialPortDataReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/pwr/service/SerialPortDataWriter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/pwr/service/SerialPortService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/pwr/service/impl/DataServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/pwr/service/impl/SerialPortServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.yaml" afterDir="false" />
+    <list default="true" id="218b2db1-c35e-4291-a163-69f5030727f2" name="Changes" comment="Init">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/db.mv.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.trace.db" beforeDir="false" afterPath="$PROJECT_DIR$/db.trace.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/pwr/api/controller/SerialPortController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/pwr/api/controller/SerialPortController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/pwr/converter/FloatDataConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/pwr/converter/FloatDataConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/pwr/service/SerialPortDataReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/pwr/service/SerialPortDataReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/pwr/service/SerialPortDataWriter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/pwr/service/SerialPortService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/pwr/service/SerialPortService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/pwr/service/impl/SerialPortServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/pwr/service/impl/SerialPortServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,6 +88,14 @@
       <option name="presentableId" value="Default" />
       <updated>1667215313633</updated>
     </task>
+    <task id="LOCAL-00001" summary="Init">
+      <created>1667582003634</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1667582003634</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -119,6 +108,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Init" />
+    <option name="LAST_COMMIT_MESSAGE" value="Init" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/PWRinSpace$Main.ic" NAME="Main Coverage Results" MODIFIED="1667578745398" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

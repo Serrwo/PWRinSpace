@@ -26,11 +26,10 @@ public class FloatDataConverter implements AttributeConverter<Float[], String> {
         var builder = new StringBuilder();
         for(int i = 0; i < values.length; i++) {
             if(values[i] != null) {
-                var value = defaultDecimalFormat.format(values[i].toString());
-                builder.append(value);
+                builder.append(values[i]);
             }
             if(i + 1 < values.length) {
-                builder.append(",");
+                builder.append(";");
             }
         }
         return builder.toString();
@@ -42,7 +41,7 @@ public class FloatDataConverter implements AttributeConverter<Float[], String> {
             return null;
         }
         List<Float> values = new ArrayList<>();
-        String[] floatStrings = joined.split(",");
+        String[] floatStrings = joined.split(";");
         for(String str : floatStrings) {
             values.add(Float.parseFloat(str));
         }
