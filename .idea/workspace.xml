@@ -4,16 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="218b2db1-c35e-4291-a163-69f5030727f2" name="Changes" comment="Init">
+    <list default="true" id="218b2db1-c35e-4291-a163-69f5030727f2" name="Changes" comment="zmiany">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/db.mv.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.trace.db" beforeDir="false" afterPath="$PROJECT_DIR$/db.trace.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/pwr/api/controller/SerialPortController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/pwr/api/controller/SerialPortController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/pwr/converter/FloatDataConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/pwr/converter/FloatDataConverter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/pwr/service/SerialPortDataReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/pwr/service/SerialPortDataReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/pwr/service/SerialPortDataWriter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/pwr/service/SerialPortService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/pwr/service/SerialPortService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/pwr/service/impl/SerialPortServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/pwr/service/impl/SerialPortServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +88,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667582003634</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="zmiany">
+      <created>1667587408797</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1667587408797</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -111,7 +111,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Init" />
-    <option name="LAST_COMMIT_MESSAGE" value="Init" />
+    <MESSAGE value="zmiany" />
+    <option name="LAST_COMMIT_MESSAGE" value="zmiany" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/PWRinSpace$Main.ic" NAME="Main Coverage Results" MODIFIED="1667578745398" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
